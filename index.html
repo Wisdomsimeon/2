@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #111;
+        }
+
+        /* Colors based on new scheme */
+        :root {
+            --black: #111;
+            --dark-grey: #333;
+            --light-grey: #666;
+            --red: #ff3b3b;
+            --white: #ffffff;
+        }
+
+        /* Gradient background setup */
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--black), var(--dark-grey));
+        }
+
+        /* Header and Navigation */
+        .header {
+            background: linear-gradient(135deg, var(--black), var(--red));
+            padding: 20px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .navbar a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .navbar a:hover {
+            color: var(--red);
+        }
+
+        /* Intro Section */
+        .intro {
+            background: linear-gradient(135deg, var(--dark-grey), var(--black));
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .intro h1 {
+            color: var(--red);
+            font-size: 2.5em;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            margin-top: 15px;
+            color: var(--light-grey);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio h2 {
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .portfolio-item {
+            background: linear-gradient(135deg, var(--dark-grey), var(--black));
+            padding: 20px;
+            border: 1px solid var(--light-grey);
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-item h3 {
+            color: var(--red);
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item p {
+            color: var(--light-grey);
+            font-size: 1em;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, var(--black), var(--red));
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        /* Responsive media queries */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro {
+                padding: 30px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro h1 {
+                font-size: 1.8em;
+            }
+
+            .portfolio-item p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="intro">
+            <h1>My Portfolio</h1>
+            <p>Welcome! Here’s a showcase of my work, skills, and projects.</p>
+        </section>
+        
+        <section class="portfolio">
+            <h2>Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h3>Project Four</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio | Designed by Me</p>
+    </footer>
+
+</body>
+</html>
