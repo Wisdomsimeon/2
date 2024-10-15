@@ -5,8 +5,4 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-github-username.github.io/portfolio-page</loc>
-    <priority>0.8</priority>
-  </url>
-  <!-- Add other pages similarly -->
 </urlset>
